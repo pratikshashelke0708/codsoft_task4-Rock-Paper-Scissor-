@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Emoji Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game">
+    <h1>🪨📄✂️ Rock Paper Scissors</h1>
+
+    <p id="turn">Your turn! Choose 🪨 📄 ✂️</p>
+
+    <div class="score">
+      You: <span id="player-score">0</span> |
+      Computer: <span id="computer-score">0</span>
+    </div>
+
+    <div class="choices">
+      <button onclick="playGame('rock')">🪨</button>
+      <button onclick="playGame('paper')">📄</button>
+      <button onclick="playGame('scissors')">✂️</button>
+    </div>
+
+    <div class="hands">
+      <p>You chose: <span id="player-hand">❔</span></p>
+      <p>Computer chose: <span id="computer-hand">❔</span></p>
+    </div>
+
+    <h2 id="result">Make your move!</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
